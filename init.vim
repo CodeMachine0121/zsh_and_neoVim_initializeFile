@@ -12,6 +12,11 @@ set expandtab
 set autoindent
 set fileformat=unix
 
+" set hightligh current line
+set t_Co=256
+set cursorline
+hi cursorline cterm=underline ctermbg=DarkMagenta ctermfg=Magenta
+set cursorcolumn
 
 call plug#begin('~/.vim/plugged')
 
