@@ -1,3 +1,4 @@
+syntax on
 set encoding=utf-8
 set number
 syntax enable
@@ -18,8 +19,13 @@ set cursorline
 hi cursorline cterm=underline ctermbg=DarkMagenta ctermfg=Magenta
 set cursorcolumn
 
-call plug#begin('~/.vim/plugged')
+set numberwidth=4
+set smartindent
+set mouse=a
 
+
+call plug#begin('~/.vim/plugged')
+Plug 'sainnhe/gruvbox-material'
 Plug 'morhetz/gruvbox'
 "auto pair
 Plug 'jiangmiao/auto-pairs'
@@ -44,12 +50,14 @@ Plug 'majutsushi/tagbar'
 " Rich python syntax highlighting
 Plug 'kh3phr3n/python-syntax'
 
+"彩色括弧
+Plug 'frazrepo/vim-rainbow'
 
 call plug#end()
 
 
+colorscheme gruvbox-material
 
-colorscheme gruvbox
 let g:airline_theme='gruvbox'
 
 if (has("termguicolors"))
@@ -111,3 +119,6 @@ let g:SuperTabMappingBackward='<tab>'
 " python-syntax
 let python_elf_cls_highlight = 1
 
+
+" vim-rainbow
+let g:rainbow_active = 1
