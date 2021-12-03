@@ -44,6 +44,12 @@ Plug 'majutsushi/tagbar'
 "彩色括弧
 Plug 'frazrepo/vim-rainbow'
 
+
+" CoC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+
 " Tabnine
 Plug 'tzachar/compe-tabnine', { 'do': './install.sh' }
 
